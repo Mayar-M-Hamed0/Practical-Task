@@ -22,7 +22,7 @@ class TaskRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:150|min:2',
             'status' => 'in:pending,in-progress,completed'
         ];
     }
